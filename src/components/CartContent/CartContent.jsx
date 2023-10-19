@@ -38,7 +38,7 @@ const CartContent = ({ product }) => {
 
         </>
       ) : (
-        <div className="bg-sky-100 h-full flex flex-col items-center">
+        <div className="bg-sky-100 min-h-[55vh] flex flex-col items-center justify-center">
         <h2 className='text-center text-2xl font-bold pt-4'>Your cart is empty</h2>
         <img className="w-32 py-4" src="/image/cartEmpty.png" alt="cartEmpty_image" />
         </div>
