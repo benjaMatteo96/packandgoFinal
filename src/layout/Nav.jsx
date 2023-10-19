@@ -53,22 +53,22 @@ const Nav = () => {
             </button>
           )}
           <Link to='/'>
-            <img className='h-10' src={logo} alt="logo_Pack&Go2" />
+            <img className='h-10 hidden md:block' src={logo} alt="logo_Pack&Go2" />
           </Link>
         </div>
       
               <form onSubmit={onSearchSubmit}>
-          <div className="flex w-full h-10">
+          <div className="flex w-12 md:w-full h-10 ">
             <input
-              className='px-3 rounded-l-lg border-3 border-sky-900 '
+              className='px-3 w-12 md:w-full rounded-l-lg border-3 border-sky-900 '
               type="search"
               name="valueSearch"
               id=""
               value={valueSearch}
               onChange={onInputChange}
-              placeholder="Search here"
+              placeholder="Search"
             />
-            <button className="btn-search px-3 bg-sky-800 hover.bg-yellow-600 rounded-r-lg text-white text-base font-semibold">Search</button>
+            <button className="btn-search px-3 bg-sky-800 hover.bg-yellow-600 rounded-r-lg w-5 md:w-24 text-white text-base font-semibold flex justify-center items-center"><span className='flex'>🔍︎ </span></button>
           </div>
         </form>
 
