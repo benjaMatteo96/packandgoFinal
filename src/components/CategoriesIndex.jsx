@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const CategoriesIndex = () => {
   const cardStyle = {
-    width: '350px', // Ajusta el ancho según tus necesidades
-    height: '350px', // Ajusta la altura según tus necesidades
+    width: '290px', // Ajusta el ancho según tus necesidades
+    height: '320px', // Ajusta la altura según tus necesidades
     position: 'relative',
     perspective: '1000px',
   };
@@ -43,7 +43,7 @@ const CategoriesIndex = () => {
 
   return (
     <section className="bg-sky-50 w-full p-4 gap-4 flex justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2  lg:gird-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2  lg:gird-cols-3 gap-2">
         <div className="relative inline-block md:mr-10" style={cardStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <Link to="/store">
             <img className="opacity-80" src="/image/pet's_accesories.png" alt="pet's_accesories_category" style={imageStyle} />

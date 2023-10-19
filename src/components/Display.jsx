@@ -29,7 +29,7 @@ const Display = () => {
 
   return (
 
-    <div className='h-1/2 w-full flex flex-col justify-around mt-28 gap-3 items-center md:items-start md:pl-20'>
+    <div className='h-1/2 w-full flex flex-col justify-around mt-36 gap-3 items-center md:items-start md:pl-20'>
       {role === null ? ( // Si el usuario no ha iniciado sesión
         <>
           <div className='flex items-center gap-3 hover:bg-yellow-400'>
