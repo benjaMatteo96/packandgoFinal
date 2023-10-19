@@ -47,7 +47,7 @@ const Pay = () => {
         navigate('/');
       }, 2000);
     } else {
-      console.log('La transacción no se completó con éxito');
+      console.log('The transaction was not completed successfully');
     }
   };
 

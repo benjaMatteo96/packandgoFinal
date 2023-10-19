@@ -22,11 +22,11 @@ const PriceDetails = ({ product }) => {
       // El usuario no ha iniciado sesión, muestra el SweetAlert
       Swal.fire({
         icon: 'error',
-        title: 'No tiene permiso para comprar',
-        text: '¿Desea iniciar sesión?',
+        title: 'You do not have permission to buy',
+        text: 'Do you want to log in?',
         showCancelButton: true,
-        confirmButtonText: 'Sí, iniciar sesión',
-        cancelButtonText: 'Cancelar',
+        confirmButtonText: 'Yes, log in',
+        cancelButtonText: 'Cancel',
       }).then((result) => {
         if (result.isConfirmed) {
 
