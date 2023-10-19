@@ -25,7 +25,7 @@ const Register = () => {
         };
 
         console.log(data)
-        axios.post("http://localhost:8000/auth/register", data)
+        axios.post("https://packandgo-pfco.onrender.com/auth/register", data)
             .then((res) => {
                 // Manejar la respuesta exitosa si es necesario
             })

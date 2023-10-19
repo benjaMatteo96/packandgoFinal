@@ -20,7 +20,7 @@ const  ProductProvider = ({children}) => {
 
     //Lamar a los productos
     const getProducAll = async () => {
-        const url = 'http://localhost:8000/products'
+        const url = 'https://packandgo-pfco.onrender.com/products'
         const res = await fetch(`${url}`)
         const data = await res.json()
 
@@ -32,7 +32,7 @@ const  ProductProvider = ({children}) => {
     //Lamar al producto por su ID
 
     const getProductById = async _id => {
-        const url = 'http://localhost:8000/'
+        const url = 'https://packandgo-pfco.onrender.com/'
         const res = await fetch(`${url}details/:{_id}`)
         const data = await res.json()
         console.log(data)

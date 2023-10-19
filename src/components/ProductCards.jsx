@@ -48,7 +48,7 @@
 
 // /*   const getCard = async () => {
 //     try {
-//       const { data } = await axios.get(`http://localhost:8000/products?name=${props.searchText}`);
+//       const { data } = await axios.get(`https://packandgo-pfco.onrender.com/products?name=${props.searchText}`);
 
 //     } catch (error) {
 //       console.log(error.message);

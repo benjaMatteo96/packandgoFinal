@@ -17,7 +17,7 @@ const Display = () => {
   const headers = { headers: { "authorization": `Bearer ${userToken}` } };
 
   const logout = async () => {
-    axios.post("http://localhost:8000/users/signout")
+    axios.post("https://packandgo-pfco.onrender.com/users/signout")
       .then(res => {
         localStorage.clear();
         /*   navigate("/"); */

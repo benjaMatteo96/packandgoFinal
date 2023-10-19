@@ -32,7 +32,7 @@ const DataProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    axios.get('http://localhost:8000/products')
+    axios.get('https://packandgo-pfco.onrender.com/products')
       .then((res) => {
         setData(res.data.products);
         console.log("Datos cargados exitosamente:", res.data.products);
@@ -45,7 +45,7 @@ const DataProvider = ({ children }) => {
     if (userFromLocalStorage) {
       const user = JSON.parse(userFromLocalStorage);
       const userId = user.id;
-      axios.get(`http://localhost:8000/users/${userId}`)
+      axios.get(`https://packandgo-pfco.onrender.com/users/${userId}`)
         .then((res) => {
           setUse(res.data.user);
           console.log("Datos cargados exitosamente:", res.data);

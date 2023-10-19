@@ -92,7 +92,7 @@ function Trivia() {
     const resultProductID = productIDs[majorityAnswer];
 
     // Realizar una solicitud a tu base de datos para obtener el producto
-    axios.get(`http://localhost:8000/products/${resultProductID}`)
+    axios.get(`https://packandgo-pfco.onrender.com/products/${resultProductID}`)
       .then((response) => {
         console.log(response.data)
         setResultProduct(response.data.product);

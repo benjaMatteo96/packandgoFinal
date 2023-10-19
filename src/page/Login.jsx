@@ -16,7 +16,7 @@ const Login = () => {
         };
 
         axios
-            .post("http://localhost:8000/users/login", data)
+            .post("https://packandgo-pfco.onrender.com/users/login", data)
             .then((res) => {
                 console.log(res.data.response)
                 const token = res.data.response.token; // Asume que el token se encuentra en la respuesta

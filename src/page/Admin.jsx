@@ -66,7 +66,7 @@ const Admin = () => {
 
   const getProducts = async () => {
     try {
-      const { data } = await axios.get('http://localhost:8000/products');
+      const { data } = await axios.get('https://packandgo-pfco.onrender.com/products');
       setProducts(data.products);
     } catch (error) {
       console.log(error.message);
@@ -75,7 +75,7 @@ const Admin = () => {
 
   const getCategories = async () => {
     try {
-      const { data } = await axios.get('http://localhost:8000/categories');
+      const { data } = await axios.get('https://packandgo-pfco.onrender.com/categories');
       setCategories(data);
     } catch (error) {
       console.log(error.message);
@@ -95,7 +95,7 @@ const Admin = () => {
     };
     
     try {
-      await axios.post('http://localhost:8000/products', productData);
+      await axios.post('https://packandgo-pfco.onrender.com/products', productData);
       console.log('Successfully created product.');
       getProducts();
       Swal.fire('Success', 'The product was created successfully', 'success');
@@ -124,7 +124,7 @@ const Admin = () => {
     };
 
     try {
-      await axios.put(`http://localhost:8000/products/${editingProductId}`, productData);
+      await axios.put(`https://packandgo-pfco.onrender.com/products/${editingProductId}`, productData);
       console.log('Product updated successfully.');
       getProducts();
       Swal.fire('Success', 'The product was successfully updated', 'success');
@@ -154,7 +154,7 @@ const Admin = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          await axios.delete(`http://localhost:8000/products/${productId}`);
+          await axios.delete(`https://packandgo-pfco.onrender.com/products/${productId}`);
           console.log('Product successfully removed');
           Swal.fire('Success', 'The product was successfully removed', 'success');
           getProducts();

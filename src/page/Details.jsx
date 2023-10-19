@@ -19,7 +19,7 @@ const Details = () => {
 
   useEffect(() => {
     // Realiza una solicitud al servidor para obtener los detalles del producto por su ID
-    axios.get(`http://localhost:8000/products/${_id}`)
+    axios.get(`https://packandgo-pfco.onrender.com/products/${_id}`)
       .then((response) => {
         console.log(response); // Verifica los datos del producto
         setProduct(response.data.product); // Actualiza el estado con los detalles del producto

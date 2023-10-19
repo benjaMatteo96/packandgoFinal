@@ -21,7 +21,7 @@ function Store() {
 
   const getCategory = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/categories');
+      const response = await axios.get('https://packandgo-pfco.onrender.com/categories');
       console.log(response);
       if (Array.isArray(response.data)) {
         setCategory(response.data);
