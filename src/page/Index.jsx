@@ -14,7 +14,7 @@ import prueba1 from '../../public/image/prueba1.png'
 import prueba2 from '../../public/image/prueba2.png'
 import BannerIndex from '../components/BannerIndex.jsx'
 import CategoriesIndex from '../components/CategoriesIndex.jsx'
-import VisionMision from '../components/visionMision.jsx'
+import VisionMision from '../components/VisionMision.jsx'
 
 
 function Index() {
